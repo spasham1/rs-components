@@ -1,0 +1,536 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 14,
+        "name": ": user enters text in search box",
+        "description": "",
+        "id": "user-enters-text-in-search-box-and-hints-are-displayed;:-user-enters-text-in-search-box;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1221826288,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchSteps.quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9750074697,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "search box exists",
+            "match": {
+              "location": "SearchSteps.searchBoxIsPresent()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 217221300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter text in search box SMD291AX250T3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SMD291AX250T3",
+                  "offset": 27
+                }
+              ],
+              "location": "SearchSteps.enterText(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 580678895,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "search results are displayed",
+            "match": {
+              "location": "SearchSteps.displayResults()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2709463071,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I select search suggestion link 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 32
+                }
+              ],
+              "location": "SearchSteps.selectSuggestionLink(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 94141470,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I can see search results on page SMD291AX250T3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SMD291AX250T3",
+                  "offset": 33
+                }
+              ],
+              "location": "SearchSteps.displaySearchResults(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Search"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": ": user enters text in search box",
+        "description": "",
+        "id": "user-enters-text-in-search-box-and-hints-are-displayed;:-user-enters-text-in-search-box;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1562001212,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchSteps.quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7721151163,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "search box exists",
+            "match": {
+              "location": "SearchSteps.searchBoxIsPresent()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 178460184,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter text in search box soldering",
+            "match": {
+              "arguments": [
+                {
+                  "val": "soldering",
+                  "offset": 27
+                }
+              ],
+              "location": "SearchSteps.enterText(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 562328130,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "search results are displayed",
+            "match": {
+              "location": "SearchSteps.displayResults()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4951039410,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I select search suggestion link 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 32
+                }
+              ],
+              "location": "SearchSteps.selectSuggestionLink(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 350370977,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I can see search results on page Soldering Iron Tips",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Soldering Iron Tips",
+                  "offset": 33
+                }
+              ],
+              "location": "SearchSteps.displaySearchResults(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Search"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "search for a part number and checkout",
+        "description": "",
+        "id": "user-enters-text-in-search-box-and-hints-are-displayed;search-for-a-part-number-and-checkout",
+        "after": [
+          {
+            "result": {
+              "duration": 1355299081,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchSteps.quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12168664417,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "page contains search results for 01508",
+            "match": {
+              "arguments": [
+                {
+                  "val": "01508",
+                  "offset": 33
+                }
+              ],
+              "location": "SearchSteps.page_contains_search_results(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1329000398,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I add product to basket",
+            "match": {
+              "location": "SearchSteps.addProductToBasket()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2214924128,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click checkout basket and confirm",
+            "match": {
+              "location": "SearchSteps.clickCheckOut()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52661230,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I get login popup",
+            "match": {
+              "location": "SearchSteps.assertLoginPopup()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": ": user sets filter",
+        "description": "",
+        "id": "user-enters-text-in-search-box-and-hints-are-displayed;:-user-sets-filter",
+        "after": [
+          {
+            "result": {
+              "duration": 1454035655,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchSteps.quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12363717610,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "page contains search results for Soldering Irons",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Soldering Irons",
+                  "offset": 33
+                }
+              ],
+              "location": "SearchSteps.page_contains_search_results(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 949277473,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I set filter Brand with value Portasol",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brand",
+                  "offset": 13
+                },
+                {
+                  "val": "Portasol",
+                  "offset": 30
+                }
+              ],
+              "location": "SearchSteps.setFilterBrand(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1417903571,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I can see product Portasol Gas Soldering Iron, 60W with part_number 10181060",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Portasol Gas Soldering Iron, 60W",
+                  "offset": 18
+                },
+                {
+                  "val": "10181060",
+                  "offset": 68
+                }
+              ],
+              "location": "SearchSteps.assertProductAndPartNumber(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 113089052,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "product count is 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 17
+                }
+              ],
+              "location": "SearchSteps.assertProductCount(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 848615501,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I set filter Wattage with value 125W",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Wattage",
+                  "offset": 13
+                },
+                {
+                  "val": "125W",
+                  "offset": 32
+                }
+              ],
+              "location": "SearchSteps.setFilterBrand(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 481940421,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I can see product Portasol Gas Soldering Iron, 125W with part_number 11180070",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Portasol Gas Soldering Iron, 125W",
+                  "offset": 18
+                },
+                {
+                  "val": "11180070",
+                  "offset": 69
+                }
+              ],
+              "location": "SearchSteps.assertProductAndPartNumber(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 57974034,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "product count is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 17
+                }
+              ],
+              "location": "SearchSteps.assertProductCount(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 155662949,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 35,
+                "value": "#user checks out"
+              }
+            ],
+            "line": 36,
+            "name": "I add product Portasol Gas Soldering Iron, 125W with quantity 1 to basket",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Portasol Gas Soldering Iron, 125W",
+                  "offset": 14
+                },
+                {
+                  "val": "1",
+                  "offset": 62
+                }
+              ],
+              "location": "SearchSteps.addProductToBasket(String,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2120935093,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I click checkout basket and confirm",
+            "match": {
+              "location": "SearchSteps.clickCheckOut()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117357997,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I get login popup",
+            "match": {
+              "location": "SearchSteps.assertLoginPopup()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "user enters text in search box and hints are displayed",
+    "description": "",
+    "id": "user-enters-text-in-search-box-and-hints-are-displayed",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/Search.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Search"
+      }
+    ]
+  }
+]

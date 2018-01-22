@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="67.099815">
+<testcase classname="user enters text in search box and hints are displayed" name=": user enters text in search box" time="14.573406">
+<system-out><![CDATA[Given search box exists.....................................................passed
+When I enter text in search box SMD291AX250T3...............................passed
+Then search results are displayed...........................................passed
+When I select search suggestion link 1......................................passed
+Then I can see search results on page SMD291AX250T3.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="user enters text in search box and hints are displayed" name=": user enters text in search box 2" time="15.325351">
+<system-out><![CDATA[Given search box exists.....................................................passed
+When I enter text in search box soldering...................................passed
+Then search results are displayed...........................................passed
+When I select search suggestion link 3......................................passed
+Then I can see search results on page Soldering Iron Tips...................passed
+]]></system-out>
+</testcase>
+<testcase classname="user enters text in search box and hints are displayed" name="search for a part number and checkout" time="17.120549">
+<system-out><![CDATA[Given page contains search results for 01508................................passed
+When I add product to basket................................................passed
+And I click checkout basket and confirm.....................................passed
+Then I get login popup......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user enters text in search box and hints are displayed" name=": user sets filter" time="20.080509">
+<system-out><![CDATA[Given page contains search results for Soldering Irons......................passed
+When I set filter Brand with value Portasol.................................passed
+Then I can see product Portasol Gas Soldering Iron, 60W with part_number 10181060.passed
+And product count is 3......................................................passed
+When I set filter Wattage with value 125W...................................passed
+Then I can see product Portasol Gas Soldering Iron, 125W with part_number 11180070.passed
+And product count is 1......................................................passed
+When I add product Portasol Gas Soldering Iron, 125W with quantity 1 to basket.passed
+And I click checkout basket and confirm.....................................passed
+Then I get login popup......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

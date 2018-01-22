@@ -1,0 +1,46 @@
+@Search
+Feature: user enters text in search box and hints are displayed
+
+  Scenario Outline: : user enters text in search box      [90m# src/test/java/features/Search.feature:4[0m
+    [36mGiven [0m[36msearch box exists[0m
+    [36mWhen [0m[36mI enter text in search box <search_text>[0m
+    [36mThen [0m[36msearch results are displayed[0m
+    [36mWhen [0m[36mI select search suggestion link <select_link>[0m
+    [36mThen [0m[36mI can see search results on page <search_result>[0m
+
+    Examples: 
+
+  @Search
+  Scenario Outline: : user enters text in search box    [90m# src/test/java/features/Search.feature:14[0m
+    [32mGiven [0m[32msearch box exists[0m                             [90m# SearchSteps.searchBoxIsPresent()[0m
+    [32mWhen [0m[32mI enter text in search box [0m[32m[1mSMD291AX250T3[0m       [90m# SearchSteps.enterText(String)[0m
+    [32mThen [0m[32msearch results are displayed[0m                   [90m# SearchSteps.displayResults()[0m
+    [32mWhen [0m[32mI select search suggestion link [0m[32m[1m1[0m              [90m# SearchSteps.selectSuggestionLink(int)[0m
+    [32mThen [0m[32mI can see search results on page [0m[32m[1mSMD291AX250T3[0m [90m# SearchSteps.displaySearchResults(String)[0m
+
+  @Search
+  Scenario Outline: : user enters text in search box          [90m# src/test/java/features/Search.feature:15[0m
+    [32mGiven [0m[32msearch box exists[0m                                   [90m# SearchSteps.searchBoxIsPresent()[0m
+    [32mWhen [0m[32mI enter text in search box [0m[32m[1msoldering[0m                 [90m# SearchSteps.enterText(String)[0m
+    [32mThen [0m[32msearch results are displayed[0m                         [90m# SearchSteps.displayResults()[0m
+    [32mWhen [0m[32mI select search suggestion link [0m[32m[1m3[0m                    [90m# SearchSteps.selectSuggestionLink(int)[0m
+    [32mThen [0m[32mI can see search results on page [0m[32m[1mSoldering Iron Tips[0m [90m# SearchSteps.displaySearchResults(String)[0m
+
+  Scenario: search for a part number and checkout [90m# src/test/java/features/Search.feature:17[0m
+    [32mGiven [0m[32mpage contains search results for [0m[32m[1m01508[0m  [90m# SearchSteps.page_contains_search_results(String)[0m
+    [32mWhen [0m[32mI add product to basket[0m                  [90m# SearchSteps.addProductToBasket()[0m
+    [32mAnd [0m[32mI click checkout basket and confirm[0m       [90m# SearchSteps.clickCheckOut()[0m
+    [32mThen [0m[32mI get login popup[0m                        [90m# SearchSteps.assertLoginPopup()[0m
+
+  Scenario: : user sets filter                                                         [90m# src/test/java/features/Search.feature:24[0m
+    [32mGiven [0m[32mpage contains search results for [0m[32m[1mSoldering Irons[0m                             [90m# SearchSteps.page_contains_search_results(String)[0m
+    [32mWhen [0m[32mI set filter [0m[32m[1mBrand[0m[32m with value [0m[32m[1mPortasol[0m                                        [90m# SearchSteps.setFilterBrand(String,String)[0m
+    [32mThen [0m[32mI can see product [0m[32m[1mPortasol Gas Soldering Iron, 60W[0m[32m with part_number [0m[32m[1m10181060[0m  [90m# SearchSteps.assertProductAndPartNumber(String,String)[0m
+    [32mAnd [0m[32mproduct count is [0m[32m[1m3[0m                                                             [90m# SearchSteps.assertProductCount(int)[0m
+    [32mWhen [0m[32mI set filter [0m[32m[1mWattage[0m[32m with value [0m[32m[1m125W[0m                                          [90m# SearchSteps.setFilterBrand(String,String)[0m
+    [32mThen [0m[32mI can see product [0m[32m[1mPortasol Gas Soldering Iron, 125W[0m[32m with part_number [0m[32m[1m11180070[0m [90m# SearchSteps.assertProductAndPartNumber(String,String)[0m
+    [32mAnd [0m[32mproduct count is [0m[32m[1m1[0m                                                             [90m# SearchSteps.assertProductCount(int)[0m
+    #user checks out
+    [32mWhen [0m[32mI add product [0m[32m[1mPortasol Gas Soldering Iron, 125W[0m[32m with quantity [0m[32m[1m1[0m[32m to basket[0m     [90m# SearchSteps.addProductToBasket(String,int)[0m
+    [32mAnd [0m[32mI click checkout basket and confirm[0m                                            [90m# SearchSteps.clickCheckOut()[0m
+    [32mThen [0m[32mI get login popup[0m                                                             [90m# SearchSteps.assertLoginPopup()[0m
