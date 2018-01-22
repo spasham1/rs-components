@@ -7,8 +7,8 @@ Feature: user enters text in search box and hints are displayed
     When I enter text in search box <search_text>
     Then search results are displayed
     
-   	When I select search suggestion link <select_link>
-   	Then I can see search results on page <search_result>
+    When I select search suggestion link <select_link>
+    Then I can see search results on page <search_result>
     Examples:
     |search_text| select_link | search_result |
     |SMD291AX250T3 | 1 | SMD291AX250T3 |
